@@ -1,0 +1,214 @@
+[
+  {
+    "id": 0,
+    "color": "green",
+    "isHidden": false,
+    "readPreviousOptions": false,
+    "card": {
+      "title": "Welcome",
+      "text": "Welcome to my Alexa speech based game: The Escape. To learn how to use this skill, say \"Help\".",
+      "prompt": "",
+      "image": {
+        "largeImageUrl": null,
+        "smallImageUrl": null
+      }
+    },
+    "voice": {
+      "intro": "Welcome to my Alexa speech based game, The Escape. To learn how to use this skill, say \"Help\".",
+      "prompt": "When you are ready, say \"Begin\"."
+    },
+    "options": [
+      {
+        "utterances": [
+          "begin"
+        ],
+        "sceneId": 1
+      }
+    ]
+  },
+  {
+    "id": 1,
+    "color": "yellow",
+    "isHidden": false,
+    "readPreviousOptions": false,
+    "card": {
+      "title": "Welcome",
+      "text": "You wake up in a dark room to the smell of burning wood, with no memory of how you got here. All you know is that your head is throbbing and you need to get out of here, wherever here is.\n\nTrying to move you realise that your right hand is chained to the wall.\n\nWith your eyes now adjusted to the darkness around you, you can now look around to find the key for the chain.",
+      "prompt": "Say \"look left\" or \"look right\" to try and find the key to the chain.",
+      "image": {
+        "largeImageUrl": null,
+        "smallImageUrl": null
+      }
+    },
+    "voice": {
+      "intro": "You wake up in a dark room to the smell of burning wood, with no memory of how you got here. All you know is that your head is throbbing, and you need to get out of here, wherever here is.\n\nTrying to move you realise that your right hand is chained to the wall.\n\nWith your eyes now adjusted to the darkness, you are now able to look at your surroundings for the key.",
+      "prompt": "Say \"look left\" or \"look right\" to try and find the key to the chain."
+    },
+    "options": [
+      {
+        "sceneId": 2,
+        "utterances": [
+          "look left"
+        ]
+      },
+      {
+        "sceneId": 4,
+        "utterances": [
+          "look right"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "color": "yellow",
+    "isHidden": false,
+    "generateOptions": true,
+    "readPreviousOptions": false,
+    "card": {
+      "title": "Looking Left",
+      "text": "Looking left you see a stick that could be used as a hook to grab a set of hanging keys.\n\nGrabbing the stick you notice that it is small enough to fit inside the lock and you could possibly jimmy the lock with it.",
+      "prompt": "",
+      "image": {
+        "largeImageUrl": null,
+        "smallImageUrl": null
+      }
+    },
+    "voice": {
+      "intro": "Looking to your left, you see a stick that could be used as a hook to grab a set of hanging keys.\n\nGrabbing the stick, you notice it's small enough to fit into the lock, you wonder if it's possible to jimmy the lock with it.",
+      "prompt": "Say \"look right\" to continue trying to find the key or say \"try the stick\" to use it to open the lock."
+    },
+    "options": [
+      {
+        "sceneId": 3,
+        "utterances": [
+          "look right"
+        ]
+      },
+      {
+        "sceneId": 5,
+        "utterances": [
+          "try the stick"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "color": "yellow",
+    "isHidden": false,
+    "generateOptions": true,
+    "readPreviousOptions": false,
+    "card": {
+      "title": "Looking Right",
+      "text": "You look right, JACKPOT!!! You see a set of 4 keys hung up on the wall.\n\nUsing your newly acquired stick you grab the set of keys and unlock the chain holding you and walk to the other end of the room. \n\nGetting there you find two doors, both are locked and both have an emergency exit sign on them.\n\nWhich door will you try",
+      "prompt": "",
+      "image": {
+        "largeImageUrl": null,
+        "smallImageUrl": null
+      }
+    },
+    "voice": {
+      "intro": "Looking right,You see a set of 4 keys hung up on the wall.\n\nUsing your newly acquired stick, you grab the set of keys and unlock the chain holding you, and walk to the other end of the room. \n\nGetting there you find two doors, both are locked, and both have an emergency exit sign on them.\n\nWhich door will you try?",
+      "prompt": ""
+    },
+    "options": [
+      {
+        "sceneId": 6,
+        "utterances": [
+          "open door 1"
+        ]
+      },
+      {
+        "sceneId": 7,
+        "utterances": [
+          "open door 2"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "color": "default",
+    "isHidden": false,
+    "generateOptions": true,
+    "readPreviousOptions": true,
+    "card": {
+      "title": "Looking Right",
+      "text": "You look right, JACKPOT!!! You see a set of 4 keys hung up on the wall.\n\nHowever, when trying to reach them you realise that they are too far away for you to reach.",
+      "prompt": "",
+      "image": {
+        "largeImageUrl": null,
+        "smallImageUrl": null
+      }
+    },
+    "voice": {
+      "intro": "Looking right,You see a set of 4 keys hung up on the wall.\n\nHowever, when trying to reach them you realise that they are too far away for you to reach.",
+      "prompt": ""
+    },
+    "options": []
+  },
+  {
+    "id": 5,
+    "color": "red",
+    "isHidden": false,
+    "generateOptions": true,
+    "readPreviousOptions": false,
+    "card": {
+      "title": "You try the stick",
+      "text": "You try the stick, it seems to be going well, you can hear the gears in the lock moving nicely.\n\n!!!CRACK!!!\n\nThe stick snaps, the sound reverberating around the room. You hear the sound of footsteps running towards you, a bright light appears at the end of the room and you see the silhouette of a man shouting at you in a language you don't understand. Still shouting, he comes over, takes what remains of your stick away and wacks you over the back of the head with the butt of his gun.\n\nYou lost. Better luck next time! :)",
+      "prompt": "",
+      "image": {
+        "largeImageUrl": null,
+        "smallImageUrl": null
+      }
+    },
+    "voice": {
+      "intro": "You try the stick, it seems to be going well, you can hear the gears in the lock moving nicely.\n\n!!!CRACK!!!\n\nThe stick snaps, the sound reverberating around the room. You hear the sound of footsteps running towards you, a bright light appears at the end of the room and you see the silhouette of a man shouting at you in a language you don't understand. Still shouting, he comes over, takes what remains of your stick away, and wacks you over the head with the butt of his gun, you blackout.\n\nGame Over!",
+      "prompt": "Thank you for playing my game, if you would like to play again say, \"Start again.\" Otherwise you can say \"Exit skill.\""
+    },
+    "options": []
+  },
+  {
+    "id": 6,
+    "color": "red",
+    "isHidden": false,
+    "generateOptions": true,
+    "readPreviousOptions": false,
+    "card": {
+      "title": "Open Door 1",
+      "text": "You unlock the door with one of the keys you got earlier, it opens to another dark room.\n\nYou enter the room but don't see the hole in the floor which you promptly fall into.\n\nGame Over!",
+      "prompt": "",
+      "image": {
+        "largeImageUrl": null,
+        "smallImageUrl": null
+      }
+    },
+    "voice": {
+      "intro": "You unlock the door with one of the keys you got earlier, it opens to another dark room.\n\nEntering the room, you don't notice the hole in the floor, which you promptly fall into.\n\nGame Over!",
+      "prompt": "Thank you for playing my game, if you would like to play again say, \"Start again.\" Otherwise you can say \"Exit skill.\""
+    },
+    "options": []
+  },
+  {
+    "id": 7,
+    "color": "green",
+    "isHidden": false,
+    "generateOptions": true,
+    "readPreviousOptions": false,
+    "card": {
+      "title": "Open Door 2",
+      "text": "You unlock the door with one of the keys you got earlier, it opens to the outside.\n\nSeeing no one around you make a run for it to a fleet of burnt orange Dodge Chargers.\n\nYou find the keys for one under its wheel arch, and use it to get the HELL OUT OF DODGE.\n\nCongratulations you Escaped the room and won the game. I hope you had fun :)",
+      "prompt": "",
+      "image": {
+        "largeImageUrl": null,
+        "smallImageUrl": null
+      }
+    },
+    "voice": {
+      "intro": "Unlocking the door with one of the keys you got earlier, you find yourself outside.\n\nSeeing a fleet of burnt orange Dodge Chargers near by, and no one around, you make a run for it.\n\nFinding keys for one of the Chargers under its wheel arch, you use it to get the HELL OUT OF DODGE.\n\nCongratulations! You Escaped the room and won the game. I hope you had fun.",
+      "prompt": "Thank you for playing my game, if you would like to play again say, \"Start again.\" Otherwise you can say \"Exit skill.\""
+    },
+    "options": []
+  }
+]
